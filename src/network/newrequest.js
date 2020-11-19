@@ -1,10 +1,8 @@
 import axios from 'axios'
-
-export function request(config){
+export function newrequest(config){
 
   const instance = axios.create({
-    baseURL:'http://123.207.32.32:8000',
-    // baseURL:'http://adi-v3.dev',
+    baseURL:'https://api-hmugo-web.itheima.net/api/public/v1',
     timeout:5000
   })
 
@@ -18,6 +16,7 @@ export function request(config){
     //3、某些请求必须携带一些东西，比如登录需要token
 
     //请求成功,success得到的是请求的config
+    // console.log(success)
     return success
 
     },err => {
@@ -37,5 +36,6 @@ export function request(config){
 
   // 3.发送真正的网络请求，因为instance返回的就是一个Promise
   return instance(config)
+
 
 }
