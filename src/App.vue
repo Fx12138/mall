@@ -1,4 +1,5 @@
 <template>
+<!-- 更换电脑后测试 -->
   <div id="app">
    <router-view></router-view>
    <maintabbar></maintabbar>

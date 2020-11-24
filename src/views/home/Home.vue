@@ -6,8 +6,9 @@
     <TabControl class="tab-control" :titles="['流行','新款','精选']" @tabClick="tabClick"></TabControl>
     <GoodsList :goods="goods[currentType].list"></GoodsList>
 
+    <div>换了电脑，进行测试</div>
     <!-- ul>li{列表$}*100 -->
-    
+
   </div>
 
 </template>
